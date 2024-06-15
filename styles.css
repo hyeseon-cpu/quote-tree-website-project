@@ -1,0 +1,258 @@
+
+
+
+/* 인용구 블록 스타일 */
+
+
+
+.info{
+    font-size:small;
+    color:rgb(19, 70, 32) ;
+}
+body {
+    font-family: "Source Sans 3", sans-serif; /* 전체 본문에 폰트 적용 */
+    font-optical-sizing: auto;
+    font-weight: 400; /* 기본 폰트 무게 설정 */
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #d9d5c3;
+    color: #50411d;
+
+}
+
+네비게이션 바 스타일
+nav {
+    background-color : rgba(227, 255, 246, 0.076);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #382109;
+    transition: 0.7s; 
+    /* 0.7s  딜레이 */
+    
+    }
+
+
+
+section {
+    padding: 10px;
+}
+
+h1, h2 {
+    color: #433406;;
+    text-align: center;
+    font-size:xx-large;
+}
+
+p{
+    text-align: center;
+}
+
+/* 검색 컨테이너 스타일 */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+
+.search-container input {
+    width: 80%;
+    height: 30px;
+    font-size: 10px;
+    border: none;
+    border-bottom: 1px rgb(88, 63, 34) solid;
+}
+
+.search-container button {
+ font-size: 10px;
+  border: none;
+  background-color: rgb(126, 158, 126);
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* 인용구 블록 스타일 */
+.quote-container, #random-quotes, #search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* 인용구 개별 블록 스타일 */
+.quote-block {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(85, 255, 153, 0.1);
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 10pt;
+    color: #010e1b;
+    
+}
+.quote-block:hover{
+   background-color:rgb(173, 193, 162);
+   transition: 0.7s;
+   
+}
+
+.heart-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* 삭제 버튼 스타일 */
+.delete-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* 저장 버튼 스타일 */
+.save-button{
+    font-size: 10px;
+    border: none;
+    background-color: rgb(126, 158, 126);
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.save-button:hover{
+    background-color: rgb(204, 237, 204);
+    transition: 0.7s;
+}
+
+/* 링크 버튼 스타일 */
+.link-button {
+    font-size: small ;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #50411d;
+    text-decoration: none;
+}
+
+/* My Page 스타일 */
+
+/* 저장된 인용구 스타일 */
+#saved-quotes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 일기장 스타일 */
+#saved-quotes, #diary {
+    margin-top: 20px;
+    
+    
+}
+
+/* 일기 작성 영역 스타일*/
+#diary-input{
+    color: #50411d;
+    font-size: small;
+    border: none;
+    border-bottom: 1px dotted #ccc; /* 아래쪽 테두리만 추가 */
+
+}
+
+
+/* 새 일기 버튼 스타일 */
+#new-diary-entry {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30pt;
+}
+
+/* 새 일기 버튼 스타일 */
+#new-diary-entry:hover{
+    background-color: rgb(131, 169, 126);
+    transition: 0.7s;
+   
+}
+
+/* 입력된 일기 블록 스타일 */
+.diary-entry {
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+    box-sizing: border-box;
+    border-radius: 10pt;
+    
+}
+
+/* 일기의 삭제 버튼 스타일 */
+.diary-entry .delete-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* 가장 상단 메인 인용구 스타일 */
+.main-quote-block blockquote {
+    position: relative;
+    background-color: #f9fbf9;
+    border-top: 1px solid #B7D7B7;
+    border-bottom: 1px solid #B7D7B7;
+    box-shadow: 0 0 0 10px #f9fbf9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .main-quote-block blockquote p {
+    margin-top: 20px;
+  }
+  .main-quote-block p::before {
+    font-family:'FontAwesome';
+    content:' \02EE';
+    font-size: 50px;
+    position: absolute;
+    top: 0.1px;
+    left: 50%; 
+    color: #B7D7B7;
+  }
+  .main-quote-block cite {
+    display: block;
+    font-size: 0.8rem;
+    text-align: right;
+    color: #B7D7B7;
+  }
